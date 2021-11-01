@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.epam.task.com/appliance"
+           xmlns:tns="http://www.epam.task.com/appliance">
+    <xs:element name="appliances">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="oven" type="tns:ovenAppliance" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element name="laptop" type="tns:laptopAppliance" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element name="refrigerator" type="tns:refrigeratorAppliance" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element name="vacuum-cleaner" type="tns:vacuumCleanerAppliance" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element name="tablet-PC" type="tns:tabletPCAppliance" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element name="speakers" type="tns:speakersAppliance" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="ovenAppliance">
+        <xs:sequence>
+            <xs:element name="price" type="xs:double"/>
+            <xs:element name="power-consumption" type="xs:double"/>
+            <xs:element name="weight" type="xs:double"/>
+            <xs:element name="capacity" type="xs:double"/>
+            <xs:element name="depth" type="xs:double"/>
+            <xs:element name="height" type="xs:double"/>
+            <xs:element name="width" type="xs:double"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="laptopAppliance">
+        <xs:sequence>
+            <xs:element name="price" type="xs:double"/>
+            <xs:element name="os" type="tns:os"/>
+            <xs:element name="battery-capacity" type="xs:double"/>
+            <xs:element name="memory-rom" type="xs:double"/>
+            <xs:element name="system-memory" type="xs:double"/>
+            <xs:element name="cpu" type="tns:cpu"/>
+            <xs:element name="display-size" type="xs:double"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="refrigeratorAppliance">
+        <xs:sequence>
+            <xs:element name="price" type="xs:double"/>
+            <xs:element name="power-consumption" type="xs:double"/>
+            <xs:element name="weight" type="xs:double"/>
+            <xs:element name="freezer-capacity" type="xs:double"/>
+            <xs:element name="overall-capacity" type="xs:double"/>
+            <xs:element name="height" type="xs:double"/>
+            <xs:element name="width" type="xs:double"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="vacuumCleanerAppliance">
+        <xs:sequence>
+            <xs:element name="price" type="xs:double"/>
+            <xs:element name="power-consumption" type="xs:double"/>
+            <xs:element name="filter-type" type="tns:filter-type"/>
+            <xs:element name="bag-type" type="tns:bag-type"/>
+            <xs:element name="wand-type" type="tns:wand-type"/>
+            <xs:element name="motor-speed-regulation" type="xs:double"/>
+            <xs:element name="cleaning-width" type="xs:double"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="tabletPCAppliance">
+        <xs:sequence>
+            <xs:element name="price" type="xs:double"/>
+            <xs:element name="color" type="tns:color"/>
+            <xs:element name="battery-capacity" type="xs:double"/>
+            <xs:element name="memory-rom" type="xs:double"/>
+            <xs:element name="flash-memory-capacity" type="xs:double"/>
+            <xs:element name="display-size" type="xs:double"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="speakersAppliance">
+        <xs:sequence>
+            <xs:element name="price" type="xs:double"/>
+            <xs:element name="power-consumption" type="xs:double"/>
+            <xs:element name="number-of-speakers" type="xs:int"/>
+            <xs:element name="cord-length" type="xs:double"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="os">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="WINDOWS"/>
+            <xs:enumeration value="LINUX"/>
+            <xs:enumeration value="MACOS"/>
+            <xs:enumeration value="ANDROID"/>
+            <xs:enumeration value="IOS"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="cpu">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="INTEL_CORE_I3"/>
+            <xs:enumeration value="INTEL_CORE_I5"/>
+            <xs:enumeration value="INTEL_CORE_I7"/>
+            <xs:enumeration value="INTEL_CORE_I9"/>
+            <xs:enumeration value="AMD_RYZEN_5"/>
+            <xs:enumeration value="AMD_RYZEN_9"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="filter-type">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="A"/>
+            <xs:enumeration value="B"/>
+            <xs:enumeration value="C"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="bag-type">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="A1"/>
+            <xs:enumeration value="B2"/>
+            <xs:enumeration value="C3"/>
+            <xs:enumeration value="D4"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="wand-type">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="ALL_IN_ONE"/>
+            <xs:enumeration value="LONG"/>
+            <xs:enumeration value="SHORT"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="color">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="BLUE"/>
+            <xs:enumeration value="YELLOW"/>
+            <xs:enumeration value="RED"/>
+            <xs:enumeration value="GREEN"/>
+            <xs:enumeration value="GRAY"/>
+            <xs:enumeration value="BLACK"/>
+            <xs:enumeration value="WHITE"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>
