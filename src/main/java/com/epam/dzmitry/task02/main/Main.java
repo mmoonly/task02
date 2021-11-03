@@ -7,15 +7,11 @@ import com.epam.dzmitry.task02.entity.criteria.SearchCriteria;
 import com.epam.dzmitry.task02.entity.speakers.Speakers;
 import com.epam.dzmitry.task02.service.ApplianceService;
 import com.epam.dzmitry.task02.service.ServiceFactory;
-import org.xml.sax.SAXException;
 
-import javax.xml.parsers.ParserConfigurationException;
-import javax.xml.transform.TransformerException;
-import java.io.IOException;
 import java.util.List;
 
 public class Main {
-    public static void main(String[] args) throws ParserConfigurationException, IOException, SAXException, TransformerException {
+    public static void main(String[] args) {
 
         List<Appliance> appliances;
         ServiceFactory factory = ServiceFactory.getInstance();

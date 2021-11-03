@@ -1,4 +1,15 @@
 package com.epam.dzmitry.task02.service.validator.impl;
 
-public class WeightValidator {
+import com.epam.dzmitry.task02.service.validator.Validator;
+
+public class WeightValidator implements Validator {
+
+    @Override
+    public boolean isCriteriaValid(Object value) {
+        if (value instanceof Double) {
+            return (Double) value > 0;
+        } else {
+            return false;
+        }
+    }
 }
