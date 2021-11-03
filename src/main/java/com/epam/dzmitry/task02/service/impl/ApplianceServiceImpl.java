@@ -20,7 +20,7 @@ public class ApplianceServiceImpl implements ApplianceService {
     public List<Appliance> find(Criteria criteria) {
         if (!CriteriaValidator.isCriteriaValid(criteria)) {
             //log
-            throw new CustomException("No such criteria");
+            throw new CustomException("Criteria is not valid");
         }
         List<Appliance> appliances;
         DaoFactory factory = DaoFactory.getInstance();

@@ -8,7 +8,7 @@ public class PowerConsumptionValidator implements Validator {
     public boolean isCriteriaValid(Object value) {
         if (value instanceof Double) {
             double powerConsumption = (Double) value;
-            return ((powerConsumption > 0) && (powerConsumption < 150000));
+            return ((powerConsumption > 0) && (powerConsumption < 150000.0));
         } else {
             return false;
         }

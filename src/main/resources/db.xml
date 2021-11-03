@@ -5,150 +5,115 @@
                xsi:schemaLocation="http://www.epam.task.com/appliance db.xsd">
 
     <oven>
-        <price>900.0</price>
-        <power-consumption>1000.0</power-consumption>
-        <weight>10.0</weight>
-        <capacity>32.0</capacity>
-        <depth>60.0</depth>
-        <height>45.5</height>
-        <width>35.0</width>
+        <price>100.0</price>
+        <power-consumption>1900.0</power-consumption>
+        <weight>9.3</weight>
+        <capacity>27.0</capacity>
+        <depth>55.0</depth>
+        <height>47.5</height>
+        <width>39.0</width>
     </oven>
     <oven>
-        <price>200.0</price>
-        <power-consumption>1500.0</power-consumption>
-        <weight>12.0</weight>
-        <capacity>33.0</capacity>
-        <depth>60.0</depth>
-        <height>45.0</height>
-        <width>60.0</width>
-    </oven>
-    <oven>
-        <price>300.0</price>
-        <power-consumption>2000.0</power-consumption>
-        <weight>11.0</weight>
-        <capacity>33.0</capacity>
-        <depth>60.0</depth>
-        <height>40.0</height>
-        <width>70.0</width>
+        <price>350.0</price>
+        <power-consumption>1950.0</power-consumption>
+        <weight>12.5</weight>
+        <capacity>26.9</capacity>
+        <depth>89.0</depth>
+        <height>91.7</height>
+        <width>20.1</width>
     </oven>
 
     <laptop>
-        <price>750.0</price>
+        <price>1150.0</price>
         <os>WINDOWS</os>
-        <battery-capacity>100.0</battery-capacity>
-        <memory-rom>4000.0</memory-rom>
-        <system-memory>256.0</system-memory>
+        <battery-capacity>170.1</battery-capacity>
+        <memory-rom>3400.0</memory-rom>
+        <system-memory>3351.0</system-memory>
         <cpu>INTEL_CORE_I3</cpu>
         <display-size>15.5</display-size>
     </laptop>
     <laptop>
-        <price>1000.0</price>
-        <os>MACOS</os>
-        <battery-capacity>2000.0</battery-capacity>
-        <memory-rom>16000.0</memory-rom>
-        <system-memory>500.0</system-memory>
-        <cpu>INTEL_CORE_I7</cpu>
-        <display-size>18.5</display-size>
-    </laptop>
-    <laptop>
-        <price>2000.0</price>
-        <os>LINUX</os>
-        <battery-capacity>4000.0</battery-capacity>
-        <memory-rom>4000.0</memory-rom>
-        <system-memory>7000.0</system-memory>
-        <cpu>INTEL_CORE_I9</cpu>
-        <display-size>20.5</display-size>
+        <price>7850.0</price>
+        <os>ANDROID</os>
+        <battery-capacity>2230.0</battery-capacity>
+        <memory-rom>11300.0</memory-rom>
+        <system-memory>3281.0</system-memory>
+        <cpu>INTEL_CORE_I5</cpu>
+        <display-size>13.6</display-size>
     </laptop>
 
     <refrigerator>
-        <price>1000.0</price>
-        <power-consumption>100.0</power-consumption>
-        <weight>20.0</weight>
-        <freezer-capacity>10.0</freezer-capacity>
-        <overall-capacity>300.0</overall-capacity>
-        <height>200.0</height>
-        <width>70.0</width>
+        <price>9000.0</price>
+        <power-consumption>1234.0</power-consumption>
+        <weight>90.4</weight>
+        <freezer-capacity>87.0</freezer-capacity>
+        <overall-capacity>900.0</overall-capacity>
+        <height>76.0</height>
+        <width>65.0</width>
     </refrigerator>
     <refrigerator>
-        <price>1400.0</price>
-        <power-consumption>150.0</power-consumption>
-        <weight>25.0</weight>
-        <freezer-capacity>20.0</freezer-capacity>
-        <overall-capacity>350.0</overall-capacity>
-        <height>150.0</height>
-        <width>50.0</width>
-    </refrigerator>
-    <refrigerator>
-        <price>1300.0</price>
-        <power-consumption>150.0</power-consumption>
-        <weight>40.0</weight>
-        <freezer-capacity>20.0</freezer-capacity>
-        <overall-capacity>400.0</overall-capacity>
-        <height>300.0</height>
-        <width>150.0</width>
+        <price>3680.0</price>
+        <power-consumption>178.2</power-consumption>
+        <weight>39.0</weight>
+        <freezer-capacity>98.0</freezer-capacity>
+        <overall-capacity>401.0</overall-capacity>
+        <height>280.0</height>
+        <width>80.0</width>
     </refrigerator>
 
     <vacuum-cleaner>
-        <price>1300.0</price>
-        <power-consumption>100.0</power-consumption>
-        <filter-type>A</filter-type>
-        <bag-type>A1</bag-type>
-        <wand-type>ALL_IN_ONE</wand-type>
-        <motor-speed-regulation>3000.0</motor-speed-regulation>
-        <cleaning-width>20.0</cleaning-width>
-    </vacuum-cleaner>
-    <vacuum-cleaner>
-        <price>1000.0</price>
-        <power-consumption>150.0</power-consumption>
-        <filter-type>B</filter-type>
+        <price>1983.0</price>
+        <power-consumption>653.0</power-consumption>
+        <filter-type>C</filter-type>
         <bag-type>B2</bag-type>
-        <wand-type>LONG</wand-type>
-        <motor-speed-regulation>2500.0</motor-speed-regulation>
-        <cleaning-width>30.0</cleaning-width>
+        <wand-type>SHORT</wand-type>
+        <motor-speed-regulation>5600.0</motor-speed-regulation>
+        <cleaning-width>35.0</cleaning-width>
+    </vacuum-cleaner>
+    <vacuum-cleaner>
+        <price>8920.0</price>
+        <power-consumption>320.0</power-consumption>
+        <filter-type>A</filter-type>
+        <bag-type>B2</bag-type>
+        <wand-type>ALL_IN_ONE</wand-type>
+        <motor-speed-regulation>6530.0</motor-speed-regulation>
+        <cleaning-width>71.0</cleaning-width>
     </vacuum-cleaner>
 
     <tablet-PC>
-        <price>1000.0</price>
-        <color>GREEN</color>
-        <battery-capacity>400.0</battery-capacity>
-        <memory-rom>8000.0</memory-rom>
-        <flash-memory-capacity>2.0</flash-memory-capacity>
-        <display-size>10.0</display-size>
+        <price>8200.0</price>
+        <color>YELLOW</color>
+        <battery-capacity>340.0</battery-capacity>
+        <memory-rom>16000.0</memory-rom>
+        <flash-memory-capacity>3.3</flash-memory-capacity>
+        <display-size>16.2</display-size>
     </tablet-PC>
     <tablet-PC>
-        <price>2000.0</price>
-        <color>RED</color>
-        <battery-capacity>300.0</battery-capacity>
-        <memory-rom>9000.0</memory-rom>
-        <flash-memory-capacity>4.0</flash-memory-capacity>
-        <display-size>16.0</display-size>
-    </tablet-PC>
-    <tablet-PC>
-        <price>1600.0</price>
-        <color>BLUE</color>
-        <battery-capacity>400.0</battery-capacity>
-        <memory-rom>12000.0</memory-rom>
-        <flash-memory-capacity>6.0</flash-memory-capacity>
-        <display-size>19.0</display-size>
+        <price>5230.0</price>
+        <color>GRAY</color>
+        <battery-capacity>321.0</battery-capacity>
+        <memory-rom>2340.0</memory-rom>
+        <flash-memory-capacity>6.1</flash-memory-capacity>
+        <display-size>16.6</display-size>
     </tablet-PC>
 
     <speakers>
-        <price>300.0</price>
-        <power-consumption>15.0</power-consumption>
-        <number-of-speakers>2</number-of-speakers>
+        <price>290.5</price>
+        <power-consumption>11.1</power-consumption>
+        <number-of-speakers>6.0</number-of-speakers>
         <cord-length>2.0</cord-length>
     </speakers>
     <speakers>
-        <price>400.0</price>
-        <power-consumption>16.0</power-consumption>
-        <number-of-speakers>3</number-of-speakers>
-        <cord-length>3.0</cord-length>
+        <price>531.0</price>
+        <power-consumption>19.0</power-consumption>
+        <number-of-speakers>2.0</number-of-speakers>
+        <cord-length>8.2</cord-length>
     </speakers>
     <speakers>
-        <price>350.0</price>
-        <power-consumption>17.0</power-consumption>
-        <number-of-speakers>4</number-of-speakers>
-        <cord-length>4.0</cord-length>
+        <price>521.0</price>
+        <power-consumption>13.2</power-consumption>
+        <number-of-speakers>7.0</number-of-speakers>
+        <cord-length>6.2</cord-length>
     </speakers>
 
 </tc:appliances>

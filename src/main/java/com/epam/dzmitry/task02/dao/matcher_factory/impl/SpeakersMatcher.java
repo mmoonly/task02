@@ -13,7 +13,7 @@ public class SpeakersMatcher extends ApplianceMatcherFactory {
         return switch (SearchCriteria.Speakers.valueOf(criteriaName)) {
             case PRICE -> speakers.getPrice() == (double) value;
             case POWER_CONSUMPTION -> (double) value == speakers.getPowerConsumption();
-            case NUMBER_OF_SPEAKERS -> (int) value == speakers.getNumberOfSpeakers();
+            case NUMBER_OF_SPEAKERS -> (double) value == speakers.getNumberOfSpeakers();
             case CORD_LENGTH -> (double) value == speakers.getCordLength();
         };
     }

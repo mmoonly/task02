@@ -78,7 +78,7 @@
         <xs:sequence>
             <xs:element name="price" type="xs:double"/>
             <xs:element name="power-consumption" type="xs:double"/>
-            <xs:element name="number-of-speakers" type="xs:int"/>
+            <xs:element name="number-of-speakers" type="xs:double"/>
             <xs:element name="cord-length" type="xs:double"/>
         </xs:sequence>
     </xs:complexType>

@@ -17,16 +17,23 @@ public class Main {
         ServiceFactory factory = ServiceFactory.getInstance();
         ApplianceService service = factory.getApplianceService();
 
-        Criteria criteriaSpeakers = new Criteria(ApplianceName.SPEAKERS.name());
-        criteriaSpeakers.add(SearchCriteria.Speakers.PRICE.name(), 400.0);
-        appliances = service.find(criteriaSpeakers);
+        Criteria oven = new Criteria(ApplianceName.OVEN.name());
+        oven.add(SearchCriteria.Oven.PRICE.name(), 100.0);
+        appliances = service.find(oven);
         PrintApplianceInfo.print(appliances);
 
-        Criteria criteriaLaptop = new Criteria(ApplianceName.LAPTOP.name());
-        criteriaLaptop.add(SearchCriteria.Laptop.OS.name(), "WINDOWS");
-        appliances = service.find(criteriaLaptop);
+        Criteria laptop = new Criteria(ApplianceName.LAPTOP.name());
+        laptop.add(SearchCriteria.Laptop.OS.name(), "WINDOWS");
+        appliances = service.find(laptop);
         PrintApplianceInfo.print(appliances);
 
-        service.add(ApplianceName.SPEAKERS.name(), new Speakers(1000.0, 500.0, 4, 12));
+       service.add(ApplianceName.SPEAKERS.name(), new Speakers(1000.0, 500.0, 4.0, 12.0));
+
+        Criteria speakers = new Criteria(ApplianceName.SPEAKERS.name());
+        speakers.add(SearchCriteria.Speakers.POWER_CONSUMPTION.name(), 500.0);
+        speakers.add(SearchCriteria.Speakers.CORD_LENGTH.name(), 12.0);
+        speakers.add(SearchCriteria.Speakers.NUMBER_OF_SPEAKERS.name(), 4.0);
+        appliances = service.find(speakers);
+        PrintApplianceInfo.print(appliances);
     }
 }
